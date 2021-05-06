@@ -1,0 +1,507 @@
+body, html {
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, "sans-serif"; 
+}
+
+ul {
+   list-style: none;
+}
+
+.wrapper {
+   width: 80%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+#topHeader {
+   width: 100%;
+   padding: 15px 0;
+   background-color: #424242;
+   color: #757575;
+}
+
+#topHeader a {
+   text-decoration: none;
+   opacity: 0.8;
+   transition: opacity 0.5s;
+}
+
+#topHeader a:hover {
+   opacity: 1;
+}
+
+#social {
+   float: left;
+}
+
+#social img {
+   margin: 0 5px;
+}
+
+#contacts {
+   float: right;
+}
+
+#contacts a {
+   text-decoration: none;
+   color: inherit;
+}
+
+#contacts > img { 
+   margin-left: 0.5em;
+   margin-right: 0.5em;
+   vertical-align: top;
+}
+
+#topHeader::after {
+   display: block;
+   content: "";
+   clear: both;
+}
+
+#banner {
+   width: 100%;
+   height: 600px;
+   background: url("images/imgBanner.png") no-repeat center;
+}
+
+#banner nav {
+   width: 100%;
+   height: 100px;
+   padding: 2em 0;
+}
+
+#banner nav div, ul {
+   display: inline-block;
+   padding: 0;
+}
+
+#banner nav a img {
+   vertical-align: auto;
+}
+
+#logo a {
+   text-decoration: none;
+   opacity: 0.8;
+   transition: opacity 0.5s;
+}
+
+#logo a:hover {
+   opacity: 1;
+}
+
+#logoImg {
+   width: 20%;
+   height: auto;
+   margin-bottom: -12.5px;
+   margin-right: -12px;
+}
+
+#logo h4 {
+   display: inline-block;
+   font-size: 1.5em;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin: 0;
+   color: #424242;
+}
+
+#logo h4 span {
+   color: #f0423c;
+}
+
+#banner ul {
+   margin: 0;
+}
+
+#banner .row2 {
+   margin-left: 2em;
+   margin-bottom: 2px;
+}
+
+#banner li {
+   float: left;
+   margin-left: 2.85em;
+}
+
+#banner li:first-child {
+   margin-left: 3em;
+}
+
+#banner li a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #424242;
+   font-size: 0.75em;
+   transition: color 0.5s;
+}
+
+#banner li a span {
+   float: right;
+   font-size: 2em;
+   line-height: 0.9;
+}
+
+#banner li img {
+   transition: transform 0.5s ease-out;
+}
+
+#banner li img:hover {
+   transform: scale(1.5, 1.5);
+}
+
+#banner li a:hover {
+   color: #f0423c;
+}
+
+.current {
+   color: #f0423c !important;
+}
+
+.central {
+   text-align: center;
+   margin: 5em auto;
+}
+
+#logo-banner img {
+   display: block;
+   margin: 15px auto;
+}
+
+#banner h1 {
+   text-transform: uppercase;
+   color: #424242;
+   font-size: 2em;
+}
+
+.fancyButton {
+   background-color: #f0423c;
+   color: #fff;
+   border: none;
+   outline: none;
+   margin-top: 5em;
+   padding: 1.75em 4em;
+   font-size: 0.75rem;
+   text-transform: uppercase;
+   opacity: 0.8;
+   transition: opacity 0.5s;
+}
+
+.fancyButton:hover {
+   opacity: 1;
+}
+
+#banner .central p {
+   text-transform: uppercase;
+   font-size: 0.7em;
+   font-weight: 600;
+   color: #424242;
+   margin-top: 1.5em;
+}
+
+#banner .central p span {
+   color: #f0423c;
+}
+
+#banner .central img {
+   margin-bottom: -4px;
+}
+
+#content {
+   margin-top: 6.5em;
+}
+
+#content h2 {
+   color: #424242;
+   text-transform: uppercase;
+   font-size: 1em;
+   font-weight: 500;
+   margin: 0;
+}
+
+#content p {
+   color: #757575;
+}
+
+#content ul {
+   margin-top: 2.5em;
+}
+
+#content li {
+   width: 32%;
+   box-sizing: border-box;
+   margin: 0.75em 0;
+   padding: 1.5% 0.5em;
+   display: inline-block;
+   font-size: 1em;
+}
+
+#content li.middle {
+   margin: 0 0.5em;
+}
+
+#content li:nth-child(2n) {
+   background-color: #f7f7f7;
+}
+
+#content li img {
+   display: block;
+   width: 20%;
+   margin: 1.5em auto;
+}
+
+#content li h3 {
+   color: #424242;
+   text-transform: uppercase;
+}
+
+#btn-content {
+   display: block;
+   margin: 0 auto;
+}
+
+#content .fancyButton {
+   padding: 1.25em 3em;
+   margin-top: 2.5em;
+}
+
+
+/* Media queries */
+
+/* Header & Banner */
+
+@media screen and (max-width: 2500px) {
+   #banner nav {
+      text-align: none;
+   }
+
+   #banner nav li {
+      margin-left: 2.85em;
+      font-size: 1em;
+   }
+
+   #banner nav li:first-child {
+      margin-left: 3.5em;
+   }
+  
+   #logo {
+      vertical-align: bottom;
+   }
+
+   #banner .row2 {
+      margin-left: 0;
+   }
+
+   #banner .row2 li:first-child {
+      margin-left: 2em;
+   }
+}
+
+@media screen and (max-width: 1500px) {
+   #banner nav {
+      text-align: center;
+   }
+
+   #banner nav li {
+      margin-left: 2.85em;
+      font-size: 1.25em;
+   }
+
+   #banner nav li:first-child {
+      margin-left: 0;
+   }
+  
+   #logo {
+      margin-bottom: 2em;
+   }
+
+   #banner .row2 {
+      margin-top: 10px;
+   }
+
+   #banner #burger-nav {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   #topHeader .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   #topHeader div {
+      margin: 0.25em auto;
+   }
+
+   @media screen and (max-width: 500px) {
+      #topHeader div:nth-child(2) {
+         display: inherit;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+
+      #contacts img:nth-child(2) {
+         display: none;
+      }
+
+      #contacts a:last-child {
+         margin-top: 0.75em;
+         padding-top: 0.6em;
+         border-top: 1px solid #757575;
+      }
+   }
+   
+   #banner nav {
+      margin-bottom: 100px;
+   }
+
+   #logo {
+      float: left;
+   }
+
+   #banner #burger-nav {
+      display: block;
+      float: right;
+      width: 10%;
+      height: 55px;
+      padding: 0;
+      background: url("images/hamburger-menu-icon-transparent.png") no-repeat center/99%;
+      transition: transform 0.5s ease-out;
+   }
+
+   #banner #burger-nav.scale {
+      transform: scale(1.25, 1.25);
+   }
+
+   #burger-nav::after {
+      display: block;
+      content: "";
+      clear: both;
+   }
+
+   #banner nav ul {
+      padding-left: 4.25em;
+      overflow: hidden;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in;
+   }
+
+   #banner nav ul.open {
+      height: auto;
+      transform: translateX(0%);
+   }
+
+   #banner nav ul.close {
+      transform: translateX(100%);
+   }
+
+   #banner nav ul.reset {
+      transform: translateX(-100%);
+   }
+
+   #banner li a span {
+      float: none;
+      font-size: 1.7em;
+      vertical-align: bottom;
+  }
+
+   #banner .row1, #banner .row2 {
+      /* display: block; */
+      width: 100%;
+      height: auto;
+      margin: 0;
+      text-align: start;
+   }
+   
+   #banner nav li {
+      width: 100%;
+      font-size: 1.25em;
+      margin: 0 !important;
+      margin-bottom: 10px !important;
+   }
+
+   #banner nav li a {
+      display: block;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   #logo h4 {
+      font-size: 1em;
+   }
+
+   #banner nav li {
+      font-size: 1em;
+   }
+
+   #banner nav li span {
+      font-size: 1.7em;
+      vertical-align: bottom;
+   }
+
+   #burger-nav {
+      margin-top: -10px;
+   }
+}
+
+@media screen and (max-width: 357px) {
+   #banner {
+      height: 650px;
+   }
+   
+   #logo img {
+      width: 75%;
+   }
+   
+   #logo h4 {
+      display: none;
+   }
+
+   #burger-nav {
+      margin-top: -7.5px;
+   }
+}
+
+/* Content */
+
+@media screen and (max-width: 925px) { 
+   .fancyButton {
+      margin-top: 2.5em;
+   }
+   
+   #content li {
+      width: 45%;
+      margin: 20px 0;
+      padding: 3% 0;
+      font-size: 0.85em;
+   }
+
+   #content li.middle {
+      margin: 0;
+   }
+}
+
+@media screen and (max-width: 580px) {
+   #banner h1 {
+      font-size: 1.5em;
+   }
+
+   .central {
+      padding: 5% 0;
+   }
+   
+   .fancyButton {
+      margin-top: 2em;
+   }
+   
+   #content li {
+      width: 90%;
+      padding: 5% 0;
+      font-size: 1em;
+   }
+}
